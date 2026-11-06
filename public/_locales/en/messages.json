@@ -1,0 +1,27 @@
+{
+  "extDescription": {
+    "message": "Pick elements in the page like in VS Code and copy HTML + CSS context as an LLM prompt. Toolbar click or Alt+Shift+E."
+  },
+  "actionTitle": {
+    "message": "DOM Picker for LLM – click to start/stop the picker"
+  },
+  "commandDescription": {
+    "message": "Start/stop the element picker"
+  },
+  "toastStart": {
+    "message": "Click an element to create its context · Esc = cancel"
+  },
+  "toastStopped": {
+    "message": "Picker stopped"
+  },
+  "toastCancelled": {
+    "message": "Picker cancelled"
+  },
+  "toastCopied": {
+    "message": "Context copied ✓"
+  },
+  "toastError": {
+    "message": "Error: $MESSAGE$",
+    "placeholders": { "message": { "content": "$1" } }
+  }
+}

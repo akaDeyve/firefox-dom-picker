@@ -1,0 +1,63 @@
+{
+  "manifest_version": 3,
+  "name": "DOM Picker für LLM",
+  "version": "0.2.0",
+  "default_locale": "en",
+  "description": "__MSG_extDescription__",
+  "author": "Dave Dev",
+  "icons": {
+    "16": "icons/icon-16.png",
+    "32": "icons/icon-32.png",
+    "48": "icons/icon-48.png",
+    "64": "icons/icon-64.png",
+    "128": "icons/icon-128.png"
+  },
+  "browser_specific_settings": {
+    "gecko": {
+      "id": "dom-picker-llm@dave.dev",
+      "strict_min_version": "121.0"
+    }
+  },
+  "background": {
+    "scripts": [
+      "background.js"
+    ]
+  },
+  "action": {
+    "default_title": "__MSG_actionTitle__",
+    "default_icon": {
+      "16": "icons/icon-16.png",
+      "32": "icons/icon-32.png",
+      "48": "icons/icon-48.png",
+      "64": "icons/icon-64.png",
+      "128": "icons/icon-128.png"
+    }
+  },
+  "permissions": [
+    "activeTab",
+    "clipboardWrite",
+    "storage"
+  ],
+  "host_permissions": [
+    "<all_urls>"
+  ],
+  "content_scripts": [
+    {
+      "matches": [
+        "<all_urls>"
+      ],
+      "js": [
+        "content.js"
+      ],
+      "run_at": "document_idle"
+    }
+  ],
+  "commands": {
+    "pick-element": {
+      "suggested_key": {
+        "default": "Alt+Shift+E"
+      },
+      "description": "__MSG_commandDescription__"
+    }
+  }
+}

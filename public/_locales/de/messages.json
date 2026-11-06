@@ -1,0 +1,27 @@
+{
+  "extDescription": {
+    "message": "Wählt wie in VS Code Elemente im Browser aus und erzeugt HTML- + CSS-Kontext als Prompt für ein LLM. Toolbar-Klick oder Alt+Shift+E."
+  },
+  "actionTitle": {
+    "message": "DOM Picker für LLM – Klick startet/beendet den Picker"
+  },
+  "commandDescription": {
+    "message": "Element-Picker starten/beenden"
+  },
+  "toastStart": {
+    "message": "Element anklicken, um den Kontext zu erzeugen · Esc = Abbruch"
+  },
+  "toastStopped": {
+    "message": "Picker beendet"
+  },
+  "toastCancelled": {
+    "message": "Picker abgebrochen"
+  },
+  "toastCopied": {
+    "message": "Kontext kopiert ✓"
+  },
+  "toastError": {
+    "message": "Fehler: $MESSAGE$",
+    "placeholders": { "message": { "content": "$1" } }
+  }
+}
